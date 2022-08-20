@@ -1,0 +1,55 @@
+/* Univeral */
+
+html {
+    background-color: rgb(62, 176, 221);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.inputDiv {
+    font-size: 3rem;
+}
+
+.addGameInput {
+    height: 25px;
+    font-size: 1rem;
+}
+
+.addGameBtn {
+    height: 45px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    
+}
+
+.addedGameList {
+    font-size: 2rem;
+}
+
+.gameList {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    font-size: 2rem;
+    margin: 50px;
+    display: block;
+}
+
+.generateBtnDiv {
+    text-align: center;
+}
+
+.generateBtn {
+    height: 150px;
+    width: 200px;
+    border-radius: 25%;
+    font-size: 2.5rem;
+}
