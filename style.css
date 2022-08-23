@@ -7,9 +7,18 @@ html {
     padding: 0;
 }
 
+.main {
+    background-color: rgb(62, 176, 221);
+}
+
+.header {
+    background-color: rgb(62, 176, 221);
+}
+
 .title {
     text-align: center;
     font-size: 4rem;
+    margin: 0;
 }
 
 .inputDiv {
@@ -30,6 +39,7 @@ html {
 
 .addedGameList {
     font-size: 2rem;
+
 }
 
 .gameList {
@@ -41,7 +51,10 @@ html {
     font-size: 2rem;
     margin: 50px;
     display: block;
+    text-align: center;
 }
+
+
 
 .generateBtnDiv {
     text-align: center;
