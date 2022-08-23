@@ -12,7 +12,7 @@ const addGameFunc = (input) => {
     gameArray.push(input)
     let game = '';
     for(let i = 0;i < gameArray.length; i++) {
-        game += `<li>${gameArray[i]}</li>`
+        game += `<p class="item">${gameArray[i]}</p>`
     }
     return game
     
@@ -26,7 +26,7 @@ const addSelectedGame = () => {
     if(gameArray.length === 0){
         alert('Please add games')
     } else{
-        selectedGame += `<li>${gameArray[randNum]}</li>`;
+        selectedGame += `<p class="item">${gameArray[randNum]}</p>`;
         gameArray.splice(randNum, 1)
         
     }

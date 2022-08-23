@@ -23,6 +23,8 @@ html {
 
 .inputDiv {
     font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .addGameInput {
@@ -39,12 +41,24 @@ html {
 
 .addedGameList {
     font-size: 2rem;
-
 }
+
+.item {
+    padding: 5px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+
 
 .gameList {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .list {
@@ -52,12 +66,14 @@ html {
     margin: 50px;
     display: block;
     text-align: center;
+    
 }
 
 
 
 .generateBtnDiv {
     text-align: center;
+    padding-top: 50px;
 }
 
 .generateBtn {
