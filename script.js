@@ -12,7 +12,7 @@ const addGameFunc = (input) => {
     gameArray.push(input)
     let game = '';
     for(let i = 0;i < gameArray.length; i++) {
-        game += `<p class="item">${gameArray[i]}</p>`
+        game += `<p id='${i}' class="item">${gameArray[i]}</p>`
     }
     return game
     
@@ -23,13 +23,15 @@ const addGameFunc = (input) => {
 const addSelectedGame = () => {
     let randNum = Math.floor(Math.random() * gameArray.length)
     let selectedGame = '';
+    let itemList = document.querySelectorAll('.item')
     if(gameArray.length === 0){
         alert('Please add games')
     } else{
         selectedGame += `<p class="item">${gameArray[randNum]}</p>`;
         gameArray.splice(randNum, 1)
-        
+        itemList[randNum].remove()
     }
+    console.log(itemList)
     return selectedGame
 }
 
@@ -47,6 +49,7 @@ addGame.addEventListener('click', () => {
 
 selectGameBtn.addEventListener('click', () => {
     selectedGameList.innerHTML += addSelectedGame()
-    console.log(gameArray)
+
+    
 
 })
