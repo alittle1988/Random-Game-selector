@@ -1,30 +1,79 @@
 /* Univeral */
+:root {
+    --primary-color: rgba(30, 172, 250, 1);
+    --secondary-color: rgba(42, 65, 245, 1);
+    --stand-out: rgba(124, 30, 250, 1);
+    -accent1: rgba(27, 101, 222, 1);
+    -accent2: rgba(56, 27, 222, 1);
+}
+  /* Color Theme Swatches in Hex 
+.game-generator-1-hex { color: #7C1EFA; }
+.game-generator-2-hex { color: #381BDE; }
+.game-generator-3-hex { color: #2A41F5; }
+.game-generator-4-hex { color: #1B65DE; }
+.game-generator-5-hex { color: #1EACFA; }
 
+   Color Theme Swatches in RGBA 
+.game-generator-1-rgba { color: rgba(124, 30, 250, 1); }
+.game-generator-2-rgba { color: rgba(56, 27, 222, 1); }
+.game-generator-3-rgba { color: rgba(42, 65, 245, 1); }
+.game-generator-4-rgba { color: rgba(27, 101, 222, 1); }
+.game-generator-5-rgba { color: rgba(30, 172, 250, 1); }
+
+    Color Theme Swatches in HSLA 
+.game-generator-1-hsla { color: hsla(265, 95, 54, 1); }
+.game-generator-2-hsla { color: hsla(248, 78, 48, 1); }
+.game-generator-3-hsla { color: hsla(233, 91, 56, 1); }
+.game-generator-4-hsla { color: hsla(217, 78, 48, 1); }
+.game-generator-5-hsla { color: hsla(201, 95, 54, 1); }
+
+*/
 html {
-    background-color: rgb(62, 176, 221);
+    
+   
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
-.main {
-    background-color: rgb(62, 176, 221);
-}
+
 
 .header {
-    background-color: rgb(62, 176, 221);
+    background-color: var(--secondary-color);
+    padding: 35px 0;
 }
 
 .title {
-    text-align: center;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: yellow;
+    text-shadow: 1px 4px 5px;
+    text-decoration: underline;
     font-size: 4rem;
     margin: 0;
+    padding-left: 25px;
+    color: rgb(227, 222, 222);
 }
+
+body {
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerDiv {
+    width: 33%;
+    margin-left: 50px;
+}
+
 
 .inputDiv {
     font-size: 3rem;
     text-align: center;
     padding-top: 20px;
+    width: 50%;
 }
 
 .addGameInput {
@@ -36,8 +85,12 @@ html {
     height: 45px;
     border-radius: 25px;
     font-size: 1.5rem;
+    background-color: var(--stand-out);
+    color: white;
     
 }
+
+
 
 .addedGameList {
     font-size: 2rem;
@@ -59,7 +112,11 @@ html {
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 50%;
+
 }
+
+
 
 .list {
     font-size: 2rem;
@@ -74,6 +131,8 @@ html {
 .generateBtnDiv {
     text-align: center;
     padding-top: 50px;
+    width: 100%;
+    margin-left: 160px;
 }
 
 .generateBtn {
@@ -81,8 +140,13 @@ html {
     width: 200px;
     border-radius: 25%;
     font-size: 2.5rem;
+    background-color: var(--stand-out);
+    color: white;
 }
 
 .hide {
     display: none;
 }
+
+
+
